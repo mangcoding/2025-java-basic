@@ -1,8 +1,8 @@
-public class PaypalPayment extends Payment {
+public class PaymentPaypal extends Payment {
     private String PaypalToken;
     private String PaypalId;
 
-    PaypalPayment(String Token, String Id, String customerId) {
+    PaymentPaypal(String Token, String Id, String customerId) {
         super(customerId);
         this.PaypalToken = Token;
         this.PaypalId = Id;
