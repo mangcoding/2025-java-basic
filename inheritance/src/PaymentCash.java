@@ -2,8 +2,8 @@ public class PaymentCash extends Payment {
     private String adminId;
     private String branchId;
 
-    public PaymentCash(String adminId, String branchId, String customerId, double amount) {
-        super(customerId, amount);
+    public PaymentCash(String adminId, String branchId, String customerId) {
+        super(customerId);
         this.adminId = adminId;
         this.branchId = branchId;
     }

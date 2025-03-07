@@ -4,13 +4,19 @@ public class Payment {
     private String paymentDate;
     private double amount;
     
+    public Payment(String customerId) {
+        this.customerId = customerId;
+        this.paymentId = generateID();
+        this.paymentDate = generateDate();
+    }
+
     public Payment(String customerId, double amount) {
         this.customerId = customerId;
         this.amount = amount;
         this.paymentId = generateID();
         this.paymentDate = generateDate();
     }
-
+    
     public Payment(String customerId, double amount, String paymentId) {
         this.customerId = customerId;
         this.amount = amount;
