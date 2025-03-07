@@ -4,6 +4,11 @@ public class Payment {
     private String paymentDate;
     private double amount;
     
+    public Payment() {
+        this.paymentId = generateID();
+        this.paymentDate = generateDate();
+    }
+    
     public Payment(String customerId) {
         this.customerId = customerId;
         this.paymentId = generateID();
@@ -24,12 +29,12 @@ public class Payment {
         this.paymentDate = generateDate();
     }
 
-    private String generateID() {
+    public String generateID() {
         //we can get from latest id from database, or generate uuid
         return "1111111";
     }
 
-    private String generateDate() {
+    public String generateDate() {
         //current date timestamp
         return "2025-03-06";
     }
