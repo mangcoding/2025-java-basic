@@ -12,3 +12,5 @@ public class App {
         payZ.pay(10000);
     }
 }
+PaymentCreditCard payment = new PaymentCreditCard("1234-5678-9012-3456", "Ahmed Baghni");
+   payment.processPayment(100.0);
